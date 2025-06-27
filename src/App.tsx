@@ -1,5 +1,6 @@
 import React from 'react';
 import { ProcessStepCard } from '../Componentes/ProcessStepCard';
+import DiagramaImg from '/src/imagenes/Diagrama.png';
 import Paso1Img from '/src/imagenes/paso1.png';
 import Paso2Img from '/src/imagenes/paso2.png';
 import Paso3Img from '/src/imagenes/paso3.png';
@@ -111,7 +112,7 @@ const App: React.FC = () => {
         </div>
         <div className="bg-slate-700/50 p-4 rounded-lg border border-slate-600 shadow-inner">
           <img
-            src="/src/imagenes/Diagrama.png"
+            src={DiagramaImg}
             alt="Diagrama del funcionamiento del dispositivo ionizador ESP32"
             className="w-full max-w-4xl mx-auto rounded-md shadow-lg"
             aria-describedby="diagram-description"
