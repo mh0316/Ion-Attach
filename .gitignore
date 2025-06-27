@@ -1,0 +1,23 @@
+# Dependencias
+node_modules/
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de lock que puedes ignorar en algunos casos, pero en general se recomienda mantener package-lock.json
+# package-lock.json
+
+# Build output
+dist/
+build/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local

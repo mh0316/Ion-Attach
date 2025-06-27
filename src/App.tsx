@@ -4,6 +4,8 @@ import Paso1Img from '/src/imagenes/paso1.png';
 import Paso2Img from '/src/imagenes/paso2.png';
 import Paso3Img from '/src/imagenes/paso3.png';
 import Paso4Img from '/src/imagenes/paso4.png';
+import { Link } from 'react-router-dom';
+
 import {
   CpuChipIcon,
   FireIcon,
@@ -145,6 +147,16 @@ const App: React.FC = () => {
             Este dispositivo integra sensores precisos, componentes electrónicos y lógica programada en una placa ESP32. Realiza el monitoreo, ionización, recolección y alerta de saturación de forma completamente autónoma para garantizar aire más limpio en espacios interiores.
           </p>
         </section>
+
+        {/* Botón fuera del resumen y centrado */}
+        <div className="flex justify-center mt-8">
+          <Link
+            to="/monitoreo"
+            className="inline-flex items-center justify-center px-6 py-3 text-lg font-semibold rounded-full bg-sky-500 hover:bg-sky-600 text-white transition duration-300 shadow-lg"
+          >
+            Ver Monitoreo en Tiempo Real
+          </Link>
+        </div>
       </main>
 
       <footer className="text-center py-12 text-slate-400 text-sm">
