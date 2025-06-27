@@ -1,4 +1,10 @@
 import React from 'react';
+import TemperaturaImg from '/src/imagenes/Temperatura.png';
+import MaterialParticuladoImg from '/src/imagenes/MaterialParticulado.png';
+import ElectrodoImg from '/src/imagenes/Electrodo.png';
+import PresionDiferencialImg from '/src/imagenes/PresionDiferencial.png';
+import RejillaImg from '/src/imagenes/Rejilla.png';
+import BuzzerImg from '/src/imagenes/Buzzer.png';
 
 const Monitoreo: React.FC = () => {
   const fecha = '27 de junio de 2025';
@@ -10,7 +16,7 @@ const Monitoreo: React.FC = () => {
       valor: '52.3 °C',
       sensor: 'Sensor PT100',
       color: 'text-sky-300',
-      imagen: '/src/imagenes/Temperatura.png',
+      src: TemperaturaImg,
       alt: 'Sensor de temperatura PT100',
     },
     {
@@ -18,7 +24,7 @@ const Monitoreo: React.FC = () => {
       valor: '35.7 µg/m³',
       sensor: 'Plantower PMS5003',
       color: 'text-purple-300',
-      imagen: '/src/imagenes/MaterialParticulado.png',
+      src: MaterialParticuladoImg,
       alt: 'Sensor de partículas en aire',
     },
     {
@@ -26,7 +32,7 @@ const Monitoreo: React.FC = () => {
       valor: 'Activo',
       sensor: 'Electrodo de aguja',
       color: 'text-yellow-300',
-      imagen: '/src/imagenes/Electrodo.png',
+      src: ElectrodoImg,
       alt: 'Electrodo ionizador',
     },
     {
@@ -34,7 +40,7 @@ const Monitoreo: React.FC = () => {
       valor: '1.2 kPa',
       sensor: 'MPX5010DP',
       color: 'text-orange-300',
-      imagen: '/src/imagenes/PresionDiferencial.png',
+      src: PresionDiferencialImg,
       alt: 'Sensor de presión diferencial',
     },
     {
@@ -42,7 +48,7 @@ const Monitoreo: React.FC = () => {
       valor: '75%',
       sensor: 'Sensor de flujo',
       color: 'text-cyan-300',
-      imagen: '/src/imagenes/Rejilla.png',
+      src: RejillaImg,
       alt: 'Rejilla colectora de partículas',
     },
     {
@@ -50,7 +56,7 @@ const Monitoreo: React.FC = () => {
       valor: 'Activa',
       sensor: 'Buzzer conectado a ESP32',
       color: 'text-red-300',
-      imagen: '/src/imagenes/Buzzer.png',
+      src: BuzzerImg,
       alt: 'Alerta por saturación de rejilla',
     }
   ];
@@ -81,7 +87,7 @@ const Monitoreo: React.FC = () => {
             className="bg-slate-800 p-6 rounded-xl shadow-lg border border-slate-700 flex flex-col md:flex-row items-center gap-4"
           >
             <img
-              src={dato.imagen}
+              src={dato.src}
               alt={dato.alt}
               className="w-24 h-24 rounded-md object-contain border border-slate-600 shadow"
             />
